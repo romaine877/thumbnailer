@@ -377,6 +377,8 @@ class Thumbnail extends StatefulWidget {
     this.onlyName,
   }) : super(key: key);
 
+  final Widget? loadingIndicator
+
   /// If non-null, the style to use for this thumbnail.
   final WidgetDecoration? decoration;
 
@@ -455,7 +457,7 @@ class ThumbnailState extends State<Thumbnail> {
             );
           } else {
             return Container(
-              child: const Center(child: CircularProgressIndicator()),
+              child: const Center(child: loadingIndicator ?? CircularProgressIndicator()),
               width: widget.widgetSize,
               height: widget.widgetSize,
               decoration: BoxDecoration(
