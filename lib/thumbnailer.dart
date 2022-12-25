@@ -458,7 +458,7 @@ class ThumbnailState extends State<Thumbnail> {
             );
           } else {
             return Container(
-              child: const Center(child: loadingIndicator ?? CircularProgressIndicator()),
+              child: const Center(child: widget.loadingIndicator ?? CircularProgressIndicator()),
               width: widget.widgetSize,
               height: widget.widgetSize,
               decoration: BoxDecoration(
