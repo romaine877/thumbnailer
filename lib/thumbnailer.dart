@@ -375,10 +375,10 @@ class Thumbnail extends StatefulWidget {
     this.useWaterMark,
     this.useWrapper,
     this.onlyName,
-    this.loadingIndicator
+    this.loadingIndicator,
   }) : super(key: key);
 
-  final Widget? loadingIndicator
+  final Widget? loadingIndicator;
 
   /// If non-null, the style to use for this thumbnail.
   final WidgetDecoration? decoration;
